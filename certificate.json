@@ -1,0 +1,67 @@
+{
+ "gadgets": [
+  {
+   "name": "g0",
+   "op": "hetgao",
+   "pattern": "N<S<G15X,G10,P15X>,G5>",
+   "R": "G5"
+  },
+  {
+   "name": "g1",
+   "op": "hetgao",
+   "pattern": "N<S<G15AX,G5,P15A8>,G5>",
+   "R": "G5"
+  },
+  {
+   "name": "g2",
+   "op": "sigma",
+   "of": "g1"
+  },
+  {
+   "name": "g3",
+   "op": "hetgao",
+   "pattern": "N<S<G15AX,sG15AX,P15A5>,sG15AX>",
+   "R": "g2"
+  },
+  {
+   "name": "g4",
+   "op": "sigma",
+   "of": "g3"
+  },
+  {
+   "name": "g5",
+   "op": "hetgao",
+   "pattern": "P10A",
+   "R": "G5"
+  },
+  {
+   "name": "g6",
+   "op": "sigma",
+   "of": "g5"
+  },
+  {
+   "name": "g7",
+   "op": "hetgao",
+   "pattern": "N<S<G15AX,sG15Ah,P15A8>,sG15Ah>",
+   "R": "g6"
+  },
+  {
+   "name": "g8",
+   "op": "sigma",
+   "of": "g7"
+  }
+ ],
+ "top": {
+  "rule": "S3b",
+  "rule_inputs": [
+   "Phi(g0)",
+   "Phi(g4)",
+   "Phi(g8)"
+  ],
+  "terminal_code": "K4a"
+ },
+ "constant": "C9 (Shannon capacity of C_7), lower bound",
+ "previous_best": "3.25883262 (Tan2026, arXiv:2608.30273, independent set in C_7^{box 500}); ours 3.258835653413235 (milestone/C9, d = 600), 3.258836589085263 (v4 at d = 600) and 3.258838609166847 (milestone/C9/v4 before this certificate, d = 640)",
+ "dimension": 680,
+ "M": "7633940195574717386482425421850574306036329897638524121746581669445079452324598240940215297050166115096998082011440047894668645049922029677807453678039575894778454413370257013143357628408029229204112500314458621233356035294628792624950210791976720658426797885223161608136397612229189181890813312788998016648155959602112054282616545822402349115086721"
+}

@@ -1,0 +1,1 @@
+Vendored unmodified from https://github.com/tandonravi/C7-Shannon-Capacity-Heterogeneous-Recursion commit c753408492dde92a239708986d16c15dbf6c3235 (Apache-2.0; see LICENSE and NOTICE). Files: shannon/, data/.
